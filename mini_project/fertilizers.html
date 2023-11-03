@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Fertilizers website</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;		
+		}
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background-image: url(bg_fert1.png);
+			background-position: center;
+            background-size: cover;
+            padding-left: 8%;
+            padding-right: 8%;
+            box-sizing: border-box;
+		}
+		.box{
+			position: relative;
+			width: 200px;
+			height: 200px;
+			transform-style: preserve-3d;
+			
+			animation: animate 20s linear infinite;
+		}
+		
+		
+		@keyframes animate{
+			0%{
+				transform: perspective(1000px) rotateY(0deg);
+			}
+			100%{
+				transform: perspective(1000px) rotateY(360deg);
+			}
+		}
+		.box span{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			transform-origin: center;
+			transform-style:preserve-3d;
+			transform: rotateY(calc(var(--i) * 40deg)) translateZ(400px);
+			-webkit-box-reflect:below 0px linear-gradient(transparent,transparent,#0004);
+		}
+		h2{
+        margin-top: -350px;
+        font-size: 70px;
+        letter-spacing: 6PX;
+        font-weight: bold;
+
+        }
+	</style>
+</head>
+<body>
+	<center><h2 style="color: orange">Fertiizers</h2></center>
+	<div class="box">
+				<span style="--i:1;"><a href="BAP.html"><img src="bap.png" width="200px" height="200px"></a></span>
+				<span style="--i:2;"><a href="nuclear_fertilizer.html"><img src="nuclear.png" width="200px" height="200px"></a></span>
+				<span style="--i:3;"><a href="Biovita_fertilizer.html"><img src="biovita.png" width="200px" height="200px"></a></span>
+				<span style="--i:4;"><a href="BioGoldPlus_fertilizer.html"><img src="biogoldplus.png" width="200px" height="200px"></a></span>
+				<span style="--i:5;"><a href="Hydroponics_fertilizer.html"><img src="hydroponics.png" width="200px" height="200px"></a></span>
+				<span style="--i:6;"><a href="Grosure_fertilizer.html"><img src="grosure.png" width="200px" height="200px"></a></span>
+				<span style="--i:7;"><a href="Culter_fertilizer.html"><img src="culter.png" width="200px" height="200px"></a></span>
+				<span style="--i:8;"><a href="Tomato_fertilizer.html"><img src="tomato.png" width="200px" height="200px"></a></span>
+				<span style="--i:9;"><a href="Urea_fertilizer.html"><img src="urea.png" width="200px" height="200px"></a></span>
+				
+	</div>
+		
+</body>
+</html>
